@@ -6,23 +6,23 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const testimonials = [
   {
     quote:
-      "His keen eye for detail and innovative approach impressed our team, turning challenges into creative solutions that set him apart.",
+      "Asher blends creativity and technical skill, turning complex ideas into seamless, visually engaging digital experiences.",
     author: "Maya Lopez",
-    role: "CEO, Fundwizz",
+    role: "CEO, Hyperisland",
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
   },
   {
     quote:
-      "Working with Alex was transformative. His ability to understand our vision and execute it flawlessly exceeded all expectations.",
-    author: "James Chen",
-    role: "Founder, TechFlow",
+      "He elevated our product with cleaner code, faster performance, and design-driven solutions that enhanced user engagement.",
+    author: "Muhammad Ali",
+    role: "Founder, Yoice",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
   },
   {
     quote:
-      "The level of professionalism and creativity Alex brings is unmatched. Our brand transformation was beyond what we imagined.",
-    author: "Sarah Williams",
-    role: "CMO, BrandCo",
+      "He led UX implementation and built scalable systems, combining strong technical vision with collaborative precision.",
+    author: "Sid",
+    role: "CTO, JusteraGroup",
     avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80",
   },
 ];

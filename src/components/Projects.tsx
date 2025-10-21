@@ -170,7 +170,8 @@ function ProjectCard({
       initial={{ opacity: 0, y: 100 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.8, delay: index * 0.2 }}
-      className="sticky top-0 h-screen flex items-center justify-center py-16"
+      className="sticky h-screen flex items-center justify-center py-16"
+      style={{ top: 'calc(3rem + 0.75rem)' }}
     >
       <motion.div
         onMouseEnter={() => setIsHovered(true)}

@@ -1,10 +1,11 @@
 import { motion } from "motion/react";
-import { Mail, Phone, MapPin, Linkedin, Twitter, Instagram, Send } from "lucide-react";
+import { Mail, Phone, Github, Linkedin, Twitter, Instagram, Send } from "lucide-react";
 import { useState } from "react";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
 import { toast } from "sonner@2.0.3";
+import footerImage from "../assets/footerpic.png";
 
 export default function Footer() {
   const scrollingText = "Reach Out -";
@@ -45,6 +46,11 @@ export default function Footer() {
 
   return (
     <footer id="contact" className="relative bg-[#121111] min-h-screen overflow-hidden">
+      <img 
+        src={footerImage} 
+        alt="Hero background" 
+        className="absolute inset-0 w-full h-full object-cover"
+      />
       {/* Background Image */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-black/40" />
 
@@ -238,10 +244,17 @@ export default function Footer() {
                 transition={{ delay: 0.3 }}
                 className="flex items-start gap-4 text-white bg-white/5 backdrop-blur-sm rounded-xl p-4 border border-white/10"
               >
-                <MapPin size={24} className="text-[#ff442b] flex-shrink-0 mt-1" />
+                <Github size={24} className="text-[#ff442b] flex-shrink-0 mt-1" />
                 <div>
-                  <p className="font-semibold mb-1">Office</p>
-                  <p className="text-white/70">Ozeanblickstraße, Berlin 10115, Germany</p>
+                  <p className="font-semibold mb-1">Github</p>
+                  <a 
+                    className="text-white/70 hover:text-[#ff442b] transition-colors" 
+                    href="https://github.com/Asher-zx"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Asher-zx
+                  </a>
                 </div>
               </motion.div>
 
@@ -255,8 +268,8 @@ export default function Footer() {
                 <Mail size={24} className="text-[#ff442b] flex-shrink-0 mt-1" />
                 <div>
                   <p className="font-semibold mb-1">Email</p>
-                  <a href="mailto:hello@alexgraham.com" className="text-white/70 hover:text-[#ff442b] transition-colors">
-                    hello@alexgraham.com
+                  <a href="mailto:zhixuan.wang@hyperisland.se" className="text-white/70 hover:text-[#ff442b] transition-colors">
+                    zhixuan.wang@hyperisland.se
                   </a>
                 </div>
               </motion.div>
@@ -272,7 +285,7 @@ export default function Footer() {
                 <div>
                   <p className="font-semibold mb-1">Phone</p>
                   <a href="tel:+493012345678" className="text-white/70 hover:text-[#ff442b] transition-colors">
-                    +49 30 12345678
+                    +46 76-591 36 11
                   </a>
                 </div>
               </motion.div>
@@ -313,7 +326,7 @@ export default function Footer() {
       <div className="absolute bottom-8 left-0 right-0 z-10">
         <div className="max-w-[1400px] mx-auto px-5">
           <div className="border-t border-white/10 pt-6 flex justify-between items-center text-white/50 text-sm">
-            <p>© 2025 Alex Graham. All rights reserved.</p>
+            <p>© 2025 Asher Zhixuan Wang. All rights reserved.</p>
             <p>Designed & Developed with ❤️</p>
           </div>
         </div>

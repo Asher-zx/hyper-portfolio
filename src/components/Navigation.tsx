@@ -26,9 +26,8 @@ export default function Navigation() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/80 backdrop-blur-md shadow-md" : "bg-transparent"
-      }`}
+      className={`absolute top-0 left-0 right-0 z-50 transition-all duration-300 
+      `}
     >
       <div className="max-w-[1400px] mx-auto px-5 h-[92px] flex items-center justify-between">
         <motion.div
