@@ -3,31 +3,32 @@ import { useInView } from "motion/react";
 import { useRef, useState } from "react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import ProjectDetail from "./ProjectDetail";
+import superHumanGif from "../assets/projects/superHuman.gif";
 
 const projects = [
   {
-    year: "2024",
-    title: "Formula Vintage",
+    year: "2025",
+    title: "Super Human Network",
     description:
-      "For Formula Vintage, we crafted a design that honors the rich heritage of classic cars while adding a modern twist. Combining timeless elegance with sleek, contemporary elements, we created an experience that appeals to both enthusiasts and newcomers.",
-    image: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7",
-    tags: ["Landing Page", "Mobile App", "Redesign"],
-    client: "Formula Vintage Ltd.",
-    duration: "3 months",
-    role: "Lead Designer & Developer",
+    "Super Human Network is a digital platform exploring human performance and longevity. Designed to connect science, community, and technology, it brings together global experts pushing the boundaries of human potential.",
+    image: superHumanGif,
+    tags: ["Landing Page", "Web Design", "Brand Identity"],
+    client: "Super Human Labs.",
+    duration: "1 months",
+    role: "Lead Designer & Frontend Developer",
     detailedDescription:
-      "Formula Vintage needed a complete digital transformation to showcase their collection of classic and vintage racing cars. The project involved creating a responsive landing page, developing a companion mobile app for virtual showrooms, and redesigning their entire brand identity to appeal to both collectors and younger enthusiasts entering the vintage car market.",
+      "Super Human Network is a global initiative designed to explore and elevate human performance through data, knowledge, and community. The website serves as a gateway for experts, athletes, and innovators to share insights and discoveries on longevity, resilience, and bio-optimization. Our goal was to build a digital experience that reflects both scientific depth and visionary storytelling.",
     challenge:
-      "The main challenge was bridging the gap between traditional vintage car enthusiasts who value authenticity and heritage, and a new generation of collectors who expect modern, interactive digital experiences. We needed to create a design that felt both timeless and contemporary.",
+      "The challenge was to communicate complex scientific ideas in an accessible and emotionally engaging way. The brand needed to feel futuristic yet grounded in credibility, appealing to scientists, investors, and high-performance enthusiasts alike.",
     solution:
-      "We developed a design system that combines classic typography and elegant layouts with modern interactions and smooth animations. The color palette draws from vintage racing heritage while the UI elements are thoroughly modern. Interactive 3D car viewers and AR features make the experience engaging for tech-savvy users.",
+      "We developed a modular landing page with smooth transitions and immersive typography to express momentum and transformation. The design combines gradient overlays, organic textures, and structured grids to balance human warmth with scientific precision. Interactive sections highlight problems, solutions, and insights in an engaging, scroll-driven narrative.",
     results: [
-      "250% increase in mobile engagement",
-      "40% boost in qualified leads from the landing page",
-      "Featured in 5 major automotive design publications",
-      "4.8/5 average app store rating with 10K+ downloads",
+      "Increased newsletter sign-ups by 180% in the first month",
+      "Featured in Future of Health Design 2024 showcase",
+      "Adopted by 10+ research groups as a digital knowledge hub",
+      "Recognized for 'Best Visual Storytelling' by UX Collective",
     ],
-    technologies: ["React Native", "Three.js", "Framer Motion", "Tailwind CSS", "Node.js"],
+    technologies: ["Next.js", "Framer Motion", "Tailwind CSS", "TypeScript", "Figma"],
     galleryImages: [
       "https://images.unsplash.com/photo-1757559451664-88ebccf866ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2aW50YWdlJTIwY2FyJTIwaW50ZXJpb3J8ZW58MXx8fHwxNzYwOTgwOTMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d",
@@ -36,9 +37,9 @@ const projects = [
     ],
     testimonial: {
       quote:
-        "The team transformed our vision into reality. The attention to detail and understanding of our brand heritage was exceptional.",
-      author: "Richard Sterling",
-      role: "CEO, Formula Vintage Ltd.",
+        "The experience perfectly embodies our mission — merging science, design, and technology to inspire the next phase of human evolution.",
+      author: "Ash Parmar",
+      role: "Founder, Super Human Labs",
     },
   },
   {
@@ -187,10 +188,10 @@ function ProjectCard({
             transition={{ duration: 0.3 }}
             className="relative w-[793px] h-[716px] rounded-2xl overflow-hidden border border-[#c4bfbf]"
           >
-            <ImageWithFallback
+            <motion.img
               src={project.image}
               alt={project.title}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-left-top"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
               <motion.div
