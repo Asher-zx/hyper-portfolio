@@ -6,6 +6,16 @@ export default function WhatIDo() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById("projects");
+    if (projectsSection) {
+      projectsSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      })
+    }
+  }
+
   return (
     <section id="about" ref={ref} className="bg-white py-32 relative">
       {/* Section Header */}
@@ -50,6 +60,7 @@ export default function WhatIDo() {
             </p>
 
             <motion.button
+            onClick={scrollToProjects}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-white border border-[#c4bfbf] rounded-full px-10 py-5 text-[#4f4a4a] hover:border-[#ff442b] hover:text-[#ff442b] transition-all self-start"
