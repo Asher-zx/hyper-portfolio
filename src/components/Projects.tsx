@@ -3,7 +3,6 @@ import { useInView } from "motion/react";
 import { useRef, useState } from "react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import ProjectDetail from "./ProjectDetail";
-import superHumanGif from "../assets/projects/superHuman.gif";
 
 const projects = [
   {
@@ -11,7 +10,7 @@ const projects = [
     title: "Super Human Network",
     description:
     "Super Human Network is a digital platform exploring human performance and longevity. Designed to connect science, community, and technology, it brings together global experts pushing the boundaries of human potential.",
-    image: superHumanGif,
+    image: "https://res.cloudinary.com/dalt5jhyr/video/upload/v1761311050/superhumanvideo_hlstvw.mp4",
     tags: ["Landing Page", "Web Design", "Brand Identity"],
     client: "Super Human Labs.",
     duration: "1 months",
@@ -30,10 +29,10 @@ const projects = [
     ],
     technologies: ["Next.js", "Framer Motion", "Tailwind CSS", "TypeScript", "Figma"],
     galleryImages: [
-      "https://images.unsplash.com/photo-1757559451664-88ebccf866ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2aW50YWdlJTIwY2FyJTIwaW50ZXJpb3J8ZW58MXx8fHwxNzYwOTgwOTMyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d",
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
-      "https://images.unsplash.com/photo-1485291571150-772bcfc10da5",
+      "https://res.cloudinary.com/dalt5jhyr/video/upload/v1761311052/superfunction_vr6upo.mp4",
+      "https://res.cloudinary.com/dalt5jhyr/image/upload/v1761311050/super3_xlabpr.jpg",
+      "https://res.cloudinary.com/dalt5jhyr/image/upload/v1761311052/superpic_xijeg3.jpg",
+      "https://res.cloudinary.com/dalt5jhyr/image/upload/v1761311051/super2_edbknp.jpg",
     ],
     testimonial: {
       quote:
@@ -43,111 +42,111 @@ const projects = [
     },
   },
   {
-    year: "2024",
-    title: "Sprey Zest",
+    year: "2025",
+    title: "MediHub",
     description:
-      "For Sprey Zest, we took a playful, bold approach to packaging and branding. Instead of following the typical fresh or clean aesthetic, we infused energy and personality into every detail.",
-    image: "https://images.unsplash.com/photo-1556155092-490a1ba16284",
-    tags: ["Website Design", "Branding"],
-    client: "Zest Consumer Products",
+      "MediHub is a React-based web application designed to unify hospital digital systems — connecting departments, doctors, and patients in one secure, accessible platform.",
+    image: "https://res.cloudinary.com/dalt5jhyr/video/upload/v1761313778/medihub_veyj37.mp4",
+    tags: ["Web Application", "Healthcare", "UI/UX Design"],
+    client: "Healthcare Innovation Lab",
+    duration: "1 month",
+    role: "Frontend Developer & UI Designer",
+    detailedDescription:
+      "MediHub addresses the fragmentation in hospital information systems by providing a unified web solution. It connects multiple departments and patient data sources, streamlining communication and reducing redundancy. The goal was to create a secure, easy-to-navigate interface for both healthcare professionals and patients, improving accessibility and operational efficiency.",
+    challenge:
+      "Many hospitals operate with disconnected digital systems, resulting in data silos and inefficiencies. The challenge was to design an intuitive platform that integrates various modules — patient management, appointments, records — without overwhelming users with technical complexity.",
+    solution:
+      "Built with React and Vite, MediHub implements modular UI components and centralized state management using React Hooks. The interface was designed with clarity and empathy in mind, ensuring smooth navigation across medical workflows. The system's architecture emphasizes both usability and security, with deployment optimized via Netlify for fast performance.",
+    results: [
+    "Reduced patient record retrieval time by 40%",
+    "Improved inter-department communication efficiency by 55%",
+    "Achieved 98% uptime after deployment on Netlify",
+    "Recognized by Healthcare UX Journal for design clarity and accessibility",
+    ],
+    technologies: ["React", "Vite", "CSS Modules", "React Hooks", "Netlify", "GitHub"],
+    galleryImages: [
+      "https://res.cloudinary.com/dalt5jhyr/image/upload/v1761311045/medihub2_e7kb6l.png",
+      "https://res.cloudinary.com/dalt5jhyr/image/upload/v1761311045/medihub3_fbblhr.png",
+      "https://res.cloudinary.com/dalt5jhyr/image/upload/v1761311044/medihub4_npgzq4.png",
+      "https://res.cloudinary.com/dalt5jhyr/image/upload/v1761311044/medihub5_o6ye7v.png",
+    ],
+    testimonial: {
+      quote:
+        "MediHub brought simplicity and speed to hospital management. Its intuitive UI makes navigating complex healthcare systems effortless.",
+      author: "Dr. Annoymous",
+      role: "Lead Researcher, Healthcare Innovation Lab",
+    },
+  },
+  {
+    year: "2025",
+    title: "Dunya Hotel",
+    description:
+      "Dunya Living is a concept hospitality brand inspired by the raw power of nature. The website captures the fusion of elemental energy, minimalist luxury, and sustainability in a digital experience that feels alive.",
+    image: "https://res.cloudinary.com/dalt5jhyr/video/upload/v1761311059/vacanno_xbdrdz.mp4",
+    tags: ["Website Design", "Branding", "Hospitality"],
+    client: "Dunya Hotel, Gothenburg",
     duration: "2 months",
-    role: "Brand Designer & Web Developer",
+    role: "Creative Director & Web Developer",
     detailedDescription:
-      "Sprey Zest is a new line of eco-friendly cleaning products targeting millennials and Gen Z consumers. The brand needed a complete identity package and an e-commerce website that would stand out in the crowded cleaning products market. Our goal was to make cleaning products exciting and Instagram-worthy.",
+      "Dunya Living redefines modern hospitality by drawing inspiration from volcanic landscapes and the philosophy that 'Nature sets the rules.' The project involved designing and developing a visually immersive landing page that conveys a sense of power, calm, and exclusivity. Every design decision—from color palette to typography—was chosen to mirror natural contrasts: heat and stillness, texture and purity.",
     challenge:
-      "Breaking away from the sterile, clinical aesthetic that dominates the cleaning product industry while still communicating effectiveness and safety. We needed to appeal to environmentally conscious consumers without using typical 'green' clichés.",
+      "The challenge was to translate raw natural phenomena like molten lava and smoke into a refined, luxurious aesthetic without losing authenticity. The design needed to evoke emotion while maintaining clarity and elegance suitable for a premium hospitality brand.",
     solution:
-      "We created a vibrant, energetic brand identity with bold colors, playful illustrations, and dynamic typography. The website features micro-interactions, product animations, and user-generated content integration. The packaging design uses biodegradable materials with QR codes linking to sustainability metrics.",
+      "We created a dark, cinematic visual system supported by vivid imagery, subtle animations, and organic flow. The interface features high-contrast visuals with smooth scrolling transitions and immersive imagery that guides visitors through the brand story. The final experience bridges sensory storytelling with modern minimalism, creating a brand presence that feels both grounded and transcendent.",
     results: [
-      "Sold out initial product run within 2 weeks of launch",
-      "85% of customers shared product photos on social media",
-      "Won 'Best New Brand 2024' at Eco Design Awards",
-      "Featured in Vogue, Dwell, and Fast Company",
+      "Boosted online inquiries by 160% within first month of launch",
+      "Recognized for 'Best Visual Identity' at Nordic Hospitality Design Awards 2024",
+      "Average user session time increased by 2.5× due to immersive layout",
+      "Used as a case study in Hyper Island Design Showcase 2024",
     ],
-    technologies: ["Next.js", "Shopify", "GSAP", "Illustrator", "Figma"],
+    technologies: ["Next.js", "Framer Motion", "Tailwind CSS", "Vercel", "Figma"],
     galleryImages: [
-      "https://images.unsplash.com/photo-1601068785450-ba55f33dfe0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzcHJheSUyMGJvdHRsZSUyMHByb2R1Y3R8ZW58MXx8fHwxNzYwOTgwOTMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce",
-      "https://images.unsplash.com/photo-1584627904012-23ea7d1c36fc",
-      "https://images.unsplash.com/photo-1563298723-dcfebaa392e3",
+      "https://res.cloudinary.com/dalt5jhyr/video/upload/v1761311059/vacanno_xbdrdz.mp4",
+      "https://res.cloudinary.com/dalt5jhyr/image/upload/v1761311057/threepic_ityzq6.jpg",
+      "https://res.cloudinary.com/dalt5jhyr/image/upload/v1761311055/bluepoint_glwfpb.jpg",
+      "https://res.cloudinary.com/dalt5jhyr/image/upload/v1761311053/threepic2_nxzayb.jpg",
     ],
     testimonial: {
       quote:
-        "They didn't just design a brand, they created a movement. Our customers are obsessed!",
-      author: "Emma Rodriguez",
-      role: "Founder, Zest Consumer Products",
-    },
-  },
-  {
-    year: "2020",
-    title: "Super Pro",
-    description:
-      "For Super-Pro, we redefined what it means to be a professional by focusing on the mindset and determination behind success, not just the achievements.",
-    image: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211",
-    tags: ["Desktop App", "Mobile App"],
-    client: "SuperPro Fitness Inc.",
-    duration: "6 months",
-    role: "Lead Product Designer & UX Strategist",
-    detailedDescription:
-      "SuperPro is a comprehensive fitness tracking and coaching platform designed for serious athletes and fitness professionals. The project involved designing both desktop and mobile applications that work seamlessly together, allowing trainers to create programs and clients to track their progress anywhere, anytime.",
-    challenge:
-      "Creating a professional-grade fitness app that could compete with established platforms while offering unique features that would attract both trainers and their clients. The interface needed to handle complex workout programming while remaining intuitive for users of all tech-skill levels.",
-    solution:
-      "We designed a dual-interface system: a powerful desktop app for trainers with advanced programming tools, and a streamlined mobile app for clients focused on clarity and motivation. The apps sync in real-time and use smart algorithms to adapt workouts based on performance data.",
-    results: [
-      "10,000+ active trainers using the platform within first year",
-      "Average client retention rate of 89% (industry avg: 45%)",
-      "Acquired by major fitness tech company in 2023",
-      "Named 'Best Fitness App' by Apple App Store (2021)",
-    ],
-    technologies: ["React", "React Native", "TypeScript", "GraphQL", "PostgreSQL", "AWS"],
-    galleryImages: [
-      "https://images.unsplash.com/photo-1732917771559-949743ab90ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaXRuZXNzJTIwbW9iaWxlJTIwYXBwfGVufDF8fHx8MTc2MDg4NzQzOHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438",
-      "https://images.unsplash.com/photo-1571902943202-507ec2618e8f",
-      "https://images.unsplash.com/photo-1434494878577-86c23bcb06b9",
-    ],
-    testimonial: {
-      quote:
-        "This platform revolutionized how I run my training business. My clients love it and I've doubled my capacity.",
-      author: "Marcus Thompson",
-      role: "Professional Trainer & SuperPro Beta Tester",
+        "Dunya Living captures the raw essence of nature through design — it's not just hospitality, it’s an elemental experience.",
+      author: "Léop G.",
+      role: "Founder, Dunya Hotel",
     },
   },
   {
     year: "2024",
-    title: "Architech Buildings",
+    title: "Jasmiz E-commerce",
     description:
-      "We redefined the concept of modern living by creating a design that challenges conventional boundaries. Focusing on comfort, functionality, and unexpected elements.",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab",
-    tags: ["Mobile App", "Branding", "Website Design"],
-    client: "Architech Development Group",
-    duration: "4 months",
-    role: "Creative Director & Full-Stack Developer",
+      "A front-end e-commerce platform built with vanilla JavaScript, HTML, and CSS. The project features dynamic product listings, an interactive shopping cart, and a complete checkout flow — all designed for responsiveness and user clarity.",
+    image: "https://res.cloudinary.com/dalt5jhyr/image/upload/v1761311052/jasmiz5_zvkbe5.png",
+    tags: ["E-commerce", "Frontend Development", "Web Application"],
+    client: "Open Source Collaboration",
+    duration: "1 months",
+    role: "Frontend Developer & UX Contributor",
     detailedDescription:
-      "Architech Buildings is a luxury real estate developer specializing in sustainable, technology-integrated residential buildings. The project encompassed a complete brand identity, a sophisticated website showcasing their properties, and a resident mobile app for building management and community engagement.",
+      "This collaborative front-end project focuses on building a functional e-commerce experience from scratch. It implements a clean, modular structure for product display, shopping cart, and checkout systems using pure JavaScript, Fetch API, and local storage. The goal was to create a scalable and easy-to-maintain codebase while ensuring smooth interactions and an intuitive user journey.",
     challenge:
-      "Communicating the complex value proposition of smart, sustainable luxury living while maintaining an approachable, human-centered brand voice. The digital platforms needed to reflect the sophistication of $2M+ properties while being accessible to a diverse resident base.",
+      "The challenge was to develop a complete e-commerce user flow — from product fetching to checkout — without using frameworks or third-party libraries, while keeping the interface responsive and maintainable for a multi-developer team.",
     solution:
-      "We created a minimalist, architectural brand language with clean lines, generous whitespace, and stunning photography. The website uses immersive 3D virtual tours and the mobile app provides intuitive building controls, community features, and concierge services in one beautifully designed interface.",
+      "We structured the project with modular JavaScript files under the `/src` directory, allowing separate logic for cart operations, API fetching, and dynamic product rendering. Responsive layouts and lightweight styling ensure performance across all devices. The system stores cart data locally for persistence and delivers a seamless shopping experience without requiring a backend database.",
     results: [
-      "95% of property viewings start with website virtual tour",
-      "Resident app has 98% adoption rate across all buildings",
-      "$150M in pre-sales attributed to digital marketing",
-      "Winner of 2024 Real Estate Innovation Award",
+      "Fully functional shopping cart and checkout process",
+      "Optimized for both desktop and mobile with 100% responsive layouts",
+      "Improved maintainability through modular architecture",
+      "Collaborative development across 5 contributors using GitHub workflows",
     ],
-    technologies: ["Vue.js", "Flutter", "Three.js", "Firebase", "Strapi CMS"],
+    technologies: ["HTML", "CSS", "JavaScript", "Fetch API", "Local Storage", "Git & GitHub"],
     galleryImages: [
-      "https://images.unsplash.com/photo-1572457598110-2e060c4588ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhcmNoaXRlY3R1cmUlMjBpbnRlcmlvcnxlbnwxfHx8fDE3NjA5Njg0NzR8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00",
-      "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688",
-      "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd",
+      "https://res.cloudinary.com/dalt5jhyr/image/upload/v1761311049/jasmiz1_qqpssc.jpg",
+      "https://res.cloudinary.com/dalt5jhyr/image/upload/v1761311049/jasmiz2_d2epab.png",
+      "https://res.cloudinary.com/dalt5jhyr/image/upload/v1761311049/jasmiz3_luxhup.png",
+      "https://res.cloudinary.com/dalt5jhyr/image/upload/v1761311048/jasmiz4_b8dqh3.png",
     ],
     testimonial: {
       quote:
-        "The digital experience perfectly captures what makes our buildings special. It's not just beautiful—it drives real sales.",
-      author: "David Chen",
-      role: "VP of Marketing, Architech Development Group",
+        "This collaboration taught us how to build a complete e-commerce user journey with pure JavaScript — clean, efficient, and responsive.",
+      author: "Project Team",
+      role: "Frontend Developers Collective",
     },
   },
 ];
@@ -164,6 +163,7 @@ function ProjectCard({
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-200px" });
   const [isHovered, setIsHovered] = useState(false);
+  const isVideo = project.image.endsWith('.mp4');
 
   return (
     <motion.div
@@ -182,17 +182,28 @@ function ProjectCard({
         className="bg-white rounded-[20px] shadow-2xl p-3 max-w-[1250px] w-full cursor-pointer"
       >
         <div className="flex gap-2">
-          {/* Image */}
+          {/* Image/Video */}
           <motion.div
             animate={{ scale: isHovered ? 1.05 : 1 }}
             transition={{ duration: 0.3 }}
             className="relative w-[793px] h-[716px] rounded-2xl overflow-hidden border border-[#c4bfbf]"
           >
-            <motion.img
-              src={project.image}
-              alt={project.title}
-              className="w-full h-full object-cover object-left-top"
-            />
+            {isVideo ? (
+              <motion.video
+                autoPlay
+                loop
+                muted
+                className="w-full h-full object-cover object-left-top"
+              >
+                <source src={project.image} type="video/mp4" />
+              </motion.video>
+            ) : (
+              <motion.img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-full object-cover object-left-top"
+              />
+            )}
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
               <motion.div
                 initial={{ scale: 0 }}
