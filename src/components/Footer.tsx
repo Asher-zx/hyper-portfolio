@@ -7,6 +7,7 @@ import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
 import { toast } from "sonner@2.0.3";
 import footerImage from "../assets/footerpic.png";
+import emailjs from '@emailjs/browser';
 
 export default function Footer() {
   const scrollingText = "Reach Out -";
@@ -23,19 +24,43 @@ export default function Footer() {
     setIsSubmitting(true);
 
     // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      // EmailJS setup
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        to_name: 'Asher Wang',
+        to_email: 'zhixuan.wang@hyperisland.se', 
+        subject: formData.subject || 'Portfolio Contact',
+        message: formData.message,
+      };
 
-    toast.success("Message sent successfully! I'll get back to you soon.", {
-      duration: 4000,
-    });
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        templateParams,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
 
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
-    setIsSubmitting(false);
+      toast.success("Message sent successfully! I'll get back to you soon.", {
+        duration: 4000,
+      });
+
+      // reset
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error('EmailJS Error:', error);
+      toast.error("Failed to send message. Please try again or email me directly.", {
+        duration: 5000,
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
