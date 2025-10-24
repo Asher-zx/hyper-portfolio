@@ -52,6 +52,7 @@ export default function Hero() {
             ease: "linear",
           }}
           className="flex whitespace-nowrap"
+          style={{ paddingBottom: '40px' }}
         >
           {[...Array(5)].map((_, i) => (
             <h1
