@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { Mail, Phone, Github, Linkedin, Twitter, Instagram, Send } from "lucide-react";
+import { RiTwitterXLine } from "react-icons/ri";
 import { useState } from "react";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
@@ -303,13 +304,27 @@ export default function Footer() {
               </h4>
               <div className="flex gap-4">
                 {[
-                  { Icon: Linkedin, label: "Linkedin", url: "#" },
-                  { Icon: Twitter, label: "Twitter", url: "#" },
-                  { Icon: Instagram, label: "Instagram", url: "#" },
+                  { 
+                    Icon: Linkedin, 
+                    label: "Linkedin", 
+                    url: "https://www.linkedin.com/in/asher-wangzx/" 
+                  },
+                  { 
+                    Icon: RiTwitterXLine, 
+                    label: "X", 
+                    url: "https://x.com/asherwang1128" 
+                  },
+                  { 
+                    Icon: Github, 
+                    label: "GitHub", 
+                    url: "https://github.com/Asher-zx" 
+                  },
                 ].map(({ Icon, label, url }) => (
                   <motion.a
                     key={label}
                     href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     whileHover={{ scale: 1.1, y: -5 }}
                     className="w-12 h-12 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 flex items-center justify-center text-white hover:bg-[#ff442b] hover:border-[#ff442b] transition-all group"
                   >
