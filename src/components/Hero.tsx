@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import heorImage from "../assets/heropic.png";
-import { Linkedin, Twitter, Instagram } from "lucide-react";
+import { Linkedin, Github } from "lucide-react";
+import { RiTwitterXLine } from "react-icons/ri";
 
 export default function Hero() {
   const scrollingText = "Asher Zhixuan Wang -";
@@ -23,13 +24,27 @@ export default function Hero() {
         className="absolute left-4 bottom-12 z-10 flex flex-col gap-4 mix-blend-exclusion"
       >
         {[
-          { Icon: Linkedin, label: "Linkedin" },
-          { Icon: Twitter, label: "Twitter" },
-          { Icon: Instagram, label: "Instagram" },
-        ].map(({ Icon, label }) => (
+          { 
+            Icon: Linkedin, 
+            label: "Linkedin",
+            href: "https://www.linkedin.com/in/asher-wangzx/"
+          },
+          { 
+            Icon: RiTwitterXLine, 
+            label: "X",
+            href: "https://x.com/asherwang1128"
+          },
+          { 
+            Icon: Github, 
+            label: "GitHub",
+            href: "https://github.com/Asher-zx"
+          },
+        ].map(({ Icon, label, href }) => (
           <motion.a
             key={label}
-            href="#"
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ scale: 1.1, x: 5 }}
             className="flex items-center gap-2 text-white opacity-80 hover:opacity-100 transition-opacity"
           >
